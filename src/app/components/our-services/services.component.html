@@ -1,0 +1,12 @@
+<section>
+    <h2>Nuestros Servicios</h2>
+    <div class="services-list">
+      <div *ngFor="let service of services" class="service">
+        <img [src]="service.imageUrl" alt="{{ service.name }}">
+        <div class="service-details">
+          <h3>{{ service.name }}</h3>
+          <p>{{ service.description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>

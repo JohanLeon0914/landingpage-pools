@@ -1,0 +1,54 @@
+section {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .pool-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+  }
+  
+  .pool-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pool-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .pool-image:hover img {
+    opacity: 0.8; 
+  }
+  
+  .pool-name {
+    position: absolute;
+    color: #333;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .pool-image:hover .pool-name {
+    opacity: 1; 
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+  }

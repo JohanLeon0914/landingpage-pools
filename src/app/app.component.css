@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  app-header,
+  app-pool-gallery,
+  app-services,
+  app-testimonials,
+  app-contact {
+    margin-bottom: 100px; 
+  }
